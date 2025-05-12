@@ -61,7 +61,7 @@
     const loader = new THREE.GLTFLoader();
     loader.load('bouquet.glb', function(gltf) {
       const model = gltf.scene;
-      model.scale.set(40, 40, 40);
+      model.scale.set(40, 40, -30);
       scene.add(model);
     }, undefined, function(error) {
       console.error(error);
